@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DecimalPrecisionMacro
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"Float
+      Input","label":null,"summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":1,"$type":"System.Int32"},"_type":"System.Int32","key":"Decimals","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Single","key":"Float
+      Output","label":null,"summary":null,"hideLabel":false}],"title":"DecimalPrecisionMacro","summary":null,"pan":{"x":273.5332,"y":13.89816},"zoom":0.5999999,"elements":[{"defaultValues":{},"position":{"x":-270.0,"y":-68.0},"guid":"8abbe28e-c05f-4132-b33b-1efb4f17f494","$version":"A","$type":"Bolt.GraphInput","$id":"12"},{"defaultValues":{},"position":{"x":636.0,"y":-67.0},"guid":"7be44631-419b-4901-bb2a-fe1c1e8fc331","$version":"A","$type":"Bolt.GraphOutput","$id":"14"},{"chainable":false,"member":{"name":"Pow","parameterTypes":["System.Single","System.Single"],"targetType":"UnityEngine.Mathf","targetTypeName":"UnityEngine.Mathf","$version":"A"},"defaultValues":{"%f":{"$content":10.0,"$type":"System.Single"},"%p":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-93.0,"y":18.0},"guid":"b548b072-87a5-4fa3-92ea-1ad9e2bba001","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"defaultValues":{"b":{"$content":1.0,"$type":"System.Single"}},"position":{"x":68.0,"y":-68.0},"guid":"faf6a6e0-bcf8-4dc0-975d-2d595d167a7b","$version":"A","$type":"Bolt.ScalarMultiply","$id":"19"},{"chainable":false,"member":{"name":"Round","parameterTypes":["System.Single"],"targetType":"UnityEngine.Mathf","targetTypeName":"UnityEngine.Mathf","$version":"A"},"defaultValues":{"%f":{"$content":0.0,"$type":"System.Single"}},"position":{"x":256.0,"y":-89.0},"guid":"cb2e620b-bc29-4625-a405-3a140f083f35","$version":"A","$type":"Bolt.InvokeMember","$id":"21"},{"defaultValues":{"dividend":{"$content":1.0,"$type":"System.Single"},"divisor":{"$content":1.0,"$type":"System.Single"}},"position":{"x":426.0,"y":-68.0},"guid":"f19f0f82-87e5-4356-a55a-5c5cb32fc917","$version":"A","$type":"Bolt.ScalarDivide","$id":"24"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Decimals","destinationUnit":{"$ref":"16"},"destinationKey":"%p","guid":"70fcce0c-cf58-4205-a243-e888fc814cea","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Float
+      Input","destinationUnit":{"$ref":"19"},"destinationKey":"a","guid":"c74430ff-fc11-48f7-82eb-44f6c967973b","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"result","destinationUnit":{"$ref":"19"},"destinationKey":"b","guid":"46084ff7-afd3-436e-8d97-779e59d71ca8","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"product","destinationUnit":{"$ref":"21"},"destinationKey":"%f","guid":"9256ad47-3ba0-4810-9054-2eac96cd8566","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"24"},"destinationKey":"dividend","guid":"229c4765-29e0-438c-9e0a-30ded4663146","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"result","destinationUnit":{"$ref":"24"},"destinationKey":"divisor","guid":"eeb4e5f4-8725-465b-b3f3-87a1855e17e6","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"24"},"sourceKey":"quotient","destinationUnit":{"$ref":"14"},"destinationKey":"Float
+      Output","guid":"96e57b6c-d0b4-4ffa-b9d0-6c8c4e93691f","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
