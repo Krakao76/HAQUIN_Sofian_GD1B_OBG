@@ -346,9 +346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Seen","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$version":"A"},{"name":"NotSeen","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$version":"A"},{"name":"symbolPicked","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"Score","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"TimeRemaining","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"SeenEyeRef","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"NotSeenEyeRef","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"symbolPicked","value":{"$content":"0","$type":"System.String"},"$version":"A"},{"name":"Score","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"SeenEyeRef","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"NotSeenEyeRef","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"SeenList","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$version":"A"},{"name":"NotSeenList","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1676991459}
     - {fileID: 216748763}
@@ -459,14 +459,14 @@ Transform:
   m_LocalPosition: {x: 0, y: 20, z: 1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3880232132092600705}
   - {fileID: 2821071223314594020}
-  - {fileID: 5385668018489600027}
   - {fileID: 2876069006018931754}
-  - {fileID: 8805795527860576396}
-  - {fileID: 2678705487301173051}
-  - {fileID: 3858452196056002739}
   - {fileID: 8453501729869586618}
+  - {fileID: 2678705487301173051}
+  - {fileID: 3880232132092600705}
+  - {fileID: 5385668018489600027}
+  - {fileID: 3858452196056002739}
+  - {fileID: 8805795527860576396}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -531,8 +531,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"FillShapeList","value":{"$content":[0,1,2,3],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"},{"name":"NotFillShapeList","value":{"$content":[4,5,6,7],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"},{"name":"ColorList","value":{"$content":[{"r":0.2687344,"g":0.5462629,"b":0.9339623,"a":1.0},{"r":0.8773585,"g":0.1614009,"b":0.1748686,"a":1.0},{"r":0.8980393,"g":0.8627452,"b":0.2666667,"a":1.0},{"r":0.2424154,"g":0.6037736,"b":0.1281595,"a":1.0}],"$type":"System.Collections.Generic.List`1[[UnityEngine.Color,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 5244801383753115270}
+    - {fileID: 396380016329092202}
+    - {fileID: 78943576071546997}
+    - {fileID: 1760026161017800961}
+    - {fileID: 3878033088019581993}
+    - {fileID: 7355773804478322865}
+    - {fileID: 6642860877177860482}
+    - {fileID: 7072170004209966481}
 --- !u!1 &990460081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1252,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &2821071223314594020
 Transform:
@@ -1255,7 +1266,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &2876069006018931754
 Transform:
@@ -1269,7 +1280,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &3303088949833216633
 MeshFilter:
@@ -1378,7 +1389,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4015530204899894278
 MeshRenderer:
@@ -1496,7 +1507,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5526874840223147135
 MeshFilter:
@@ -1674,7 +1685,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &8658428961809480818
 MeshRenderer:
@@ -1727,7 +1738,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 503778931}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &8941154512416979660
 MeshRenderer:
