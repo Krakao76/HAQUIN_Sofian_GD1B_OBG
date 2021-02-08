@@ -283,6 +283,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -1448,4 +1450,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/Kraka/OneDrive/Documents/Isart/Build obg sofian/HAQUIN_Sofian_20sur20.exe
+  playerPath: C:/Users/Kraka/OneDrive/Documents/Isart/Build obg 20sur20/HAQUIN_Sofian_20sur20.exe
